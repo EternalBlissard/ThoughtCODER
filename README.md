@@ -1,3 +1,13 @@
+# Run the app
+```
+git clone https://github.com/EternalBlissard/ThoughtCODER.git
+cd ThoughtCODER/
+cd thoughtcoderapp/
+npm install vite --save-dev
+npm install
+npm run dev
+```
+Open the link in browser or use hugging face hosted [app](https://huggingface.co/spaces/eternalBlissard/ThoughtCODER)
 ## Inspiration
 I have faced this issue a lot that I got some wacky idea but got lazy and slept on it only to forget it forever💀. Only to ponder over and over again to no avail. One such thing when I working on my course project of "Computer Graphics" (iykyk) and had spent an entire week optimising my code but it still took 3min to run. Then, after my daily exercise, I got an idea for implementing the optimised version but then, my cousins came. I did scribble it on a paper but I forgot the jist of it. I did found the piece again after 2 days of hitting my head on the wall. My friends also agree to have faced this issue.<br>
 One thing, I did remember that day though, that if there was an application that could convert <b>THOUGHT TO CODE </b> with a test case then, my problem wouldn't have occured.
@@ -54,3 +64,4 @@ Polished Coding with react and css <br>
 ## What's next for Thought CODER
 Converting it into a sign-in based webapp which can store history<br>
 More thorough testing and evaluation metric <br>
+Adding support for more languages<br>
