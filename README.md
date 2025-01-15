@@ -10,7 +10,7 @@ These two papers were [Agent CODER](https://arxiv.org/html/2312.13010v2) and [Tr
 ![image](https://github.com/user-attachments/assets/cc009d38-a2db-4453-aaac-1f4341045560) (credit: Agent CODER team)<br>
 Applies the idea of chain of thought prmopting. It has 3 agents (LLMs/automations) one to write code, one for testcases and one to verify the authenicity combination. While, the idea seems correct there is a flaw that is if either one of the units were to perform incorrectly then, results won't be useful.<br>
 If both were to wrong in the same manner then, too incorrect code is generated.
-![image](https://github.com/user-attachments/assets/f6e13e69-9cb9-4c0d-996a-d3ca87d9e3f3)
+![image](https://github.com/user-attachments/assets/f6e13e69-9cb9-4c0d-996a-d3ca87d9e3f3)<br>
 <B> Tree of Thought</B>
 In chain of thought the focus is to break one problem into several simpler ones. Tree of Thought takes it up a notch by exploring different reasoning branches(since LLMs are inconsisent it helps to try different ideas). For each reasoning branch one core idea wrong/right is applied throughout like in a Depth First Search manner(explore one idea thoroughly before trying another).<br>
 ![image](https://github.com/user-attachments/assets/f2c0271e-52a8-425d-aac4-9728d1de2555) (credit: Tree of Thought team)<br>
