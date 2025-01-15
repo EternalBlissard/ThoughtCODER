@@ -23,6 +23,10 @@ In conclusion 5 Agents were made for this task:
 <li>Test Case Verifier: Validates a Test Case</li>
 <li>Code Combiner: Combines Code + Test Case for verification</li>
 </ol>
+
+![image](https://github.com/user-attachments/assets/fbd7610e-0781-4741-aa0b-cd56f56713b0)
+<h3>Model Architecture</h3>
+
 ## Challenges we ran into
 <h3> Design Pattern</h3>
 To constantly take data from one agent and keep parsing to the other agents, or using the code. Requires a need for a consistent design pattern in place.
