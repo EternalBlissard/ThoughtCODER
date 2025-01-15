@@ -12,10 +12,13 @@ Applies the idea of chain of thought prmopting. It has 3 agents (LLMs/automation
 If both were to wrong in the same manner then, too incorrect code is generated.
 ![image](https://github.com/user-attachments/assets/f6e13e69-9cb9-4c0d-996a-d3ca87d9e3f3)
 <B> Tree of Thought</B>
-In chain of thought the focus is to break one problem into several simpler ones. Tree of Thought takes it up a notch by exploring different reasoning branches(since LLMs are inconsisent it helps to try different ideas). For each reasoning branch one core idea wrong/right is applied throughout like in a Depth First Search manner.<br>
-
+In chain of thought the focus is to break one problem into several simpler ones. Tree of Thought takes it up a notch by exploring different reasoning branches(since LLMs are inconsisent it helps to try different ideas). For each reasoning branch one core idea wrong/right is applied throughout like in a Depth First Search manner(explore one idea thoroughly before trying another).<br>
+![image](https://github.com/user-attachments/assets/f2c0271e-52a8-425d-aac4-9728d1de2555) (credit: Tree of Thought team)
+I thought of using tree of thought by having one reasoner model which generates one idea/procedure which is followed by the entire agent coder setup (limited to my understanding) and the test cases generated are also checked by having a test case verifier since, LLMs make mistake during bulk generation. The entire setup is combined by using pytest library which streamlines the code verification process. This model is powered by Qwen-2.5-32B-Instruct Agents hosted on Nebius. The final model is hosted on hugging face and is also usable via a react app.
 
 ## Challenges we ran into
+
+
 
 ## Accomplishments that we're proud of
 
