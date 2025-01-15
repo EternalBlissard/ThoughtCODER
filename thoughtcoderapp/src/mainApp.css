@@ -1,0 +1,106 @@
+.mainapp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for input and output */
+    gap: 20px; /* Balanced middle gap */
+    padding: 20px; /* Moderate padding from all sides */
+}
+
+.input-section,
+.output-section {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 25px 80px; /* Consistent padding for both sections */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    height: 500px; /* Fixed height for consistency */
+    width: 400px; /* Fixed width for alignment */
+    overflow-y: auto; /* Allow vertical scrolling for content overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Maintain spacing within sections */
+}
+
+h2 {
+    font-size: 1.5rem; /* Balanced heading size */
+    margin-bottom: 15px; /* Consistent spacing below the header */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Consistent spacing between form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Spacing below the label */
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem; /* Standard input font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px; /* Spacing below sliders */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Balanced padding for buttons */
+    font-size: 1rem; /* Standard button font size */
+    color: white;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+pre {
+    background-color: #2c2c2c;
+    padding: 15px; /* Comfortable padding for output */
+    border-radius: 10px;
+    color: #61dafb;
+    font-size: 1rem; /* Standard output font size */
+    overflow-x: auto; /* Allow horizontal scrolling for long content */
+    white-space: pre-wrap; /* Preserve text formatting */
+    margin: 0;
+    flex-grow: 1; /* Ensure pre block grows inside the section */
+}
+
+.processing-animation {
+    font-size: 1.5rem; /* Balanced font size for animation */
+    color: #61dafb;
+    text-align: center;
+    line-height: 450px; /* Center-align text vertically in fixed height */
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.para{
+    font-size: 1.5rem;
+    margin: 1rem;
+    animation: move 5s infinite alternate ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}

@@ -1,42 +1,94 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #282c34, #3a3f47);
+  color: white;
+  overflow: hidden;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  text-align: center;
+} */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 50px); /* Updated to account for smaller navbar height */
+  padding-top: 50px; /* Matches the navbar height */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.slogan {
+  font-size: 2rem;
+  margin: 1rem;
+  animation: move 5s infinite alternate ease-in-out;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes logo-spin {
+@keyframes move {
   from {
-    transform: rotate(0deg);
+    transform: translateY(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(-20px);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.start-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background: linear-gradient(135deg, #61dafb, #21a1f1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.start-button:hover {
+  background: linear-gradient(135deg, #21a1f1, #1e90ff);
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:active {
+  transform: scale(1.05);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 1.5rem;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .start-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
 }
